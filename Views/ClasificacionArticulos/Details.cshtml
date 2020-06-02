@@ -1,0 +1,24 @@
+﻿@model PrimerParcial.Models.Clasificaciones.ClasificacionArticulos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClasificacionArticulos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeArticulos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeArticulos)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idClasificacionArticulos">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

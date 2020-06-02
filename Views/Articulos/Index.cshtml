@@ -1,0 +1,65 @@
+﻿@model IEnumerable<PrimerParcial.Models.Entidades.Articulo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClasificacionArticulos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suplidor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca.idMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClasificacionArticulos.idClasificacionArticulos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suplidor.idSuplidor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idArticulo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idArticulo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idArticulo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
