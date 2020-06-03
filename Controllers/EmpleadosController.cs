@@ -49,8 +49,8 @@ namespace PrimerParcial.Controllers
         // GET: Empleados/Create
         public IActionResult Create()
         {
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad");
-            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "idEmpresa");
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre");
+            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "nombre");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", empleado.idCiudad);
-            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "idEmpresa", empleado.idEmpresa);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", empleado.Ciudad.nombre);
+            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "nombre", empleado.Empresa.nombre);
             return View(empleado);
         }
 
@@ -85,8 +85,8 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", empleado.idCiudad);
-            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "idEmpresa", empleado.idEmpresa);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", empleado.idCiudad);
+            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "nombre", empleado.idEmpresa);
             return View(empleado);
         }
 
@@ -122,8 +122,8 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", empleado.idCiudad);
-            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "idEmpresa", empleado.idEmpresa);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", empleado.Ciudad.nombre);
+            ViewData["idEmpresa"] = new SelectList(_context.Empresas, "idEmpresa", "nombre", empleado.Empresa.nombre);
             return View(empleado);
         }
 
