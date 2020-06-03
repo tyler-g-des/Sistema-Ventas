@@ -88,9 +88,9 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "idClasificacionArticulos", articulo.idClasificacionArticulos);
-            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "idMarca", articulo.idMarca);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", articulo.idSuplidor);
+            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.idClasificacionArticulos);
+            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.idMarca);
+            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.idSuplidor);
             return View(articulo);
         }
 
@@ -126,9 +126,9 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "idClasificacionArticulos", articulo.idClasificacionArticulos);
-            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "idMarca", articulo.idMarca);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", articulo.idSuplidor);
+            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.ClasificacionArticulos.TipoDeArticulos);
+            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.Marca.Nombre);
+            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
             return View(articulo);
         }
 
