@@ -46,13 +46,13 @@
                 @Html.DisplayFor(modelItem => item.Cantidad)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Marca.idMarca)
+                @Html.DisplayFor(modelItem => item.Marca.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ClasificacionArticulos.idClasificacionArticulos)
+                @Html.DisplayFor(modelItem => item.ClasificacionArticulos.TipoDeArticulos)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Suplidor.idSuplidor)
+                @Html.DisplayFor(modelItem => item.Suplidor.nombre)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.idArticulo">Edit</a> |
