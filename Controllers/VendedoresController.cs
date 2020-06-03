@@ -48,7 +48,7 @@ namespace PrimerParcial.Controllers
         // GET: Vendedores/Create
         public IActionResult Create()
         {
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad");
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", vendedor.idCiudad);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", vendedor.Ciudad.nombre);
             return View(vendedor);
         }
 
@@ -82,7 +82,7 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", vendedor.idCiudad);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", vendedor.idCiudad);
             return View(vendedor);
         }
 
@@ -118,7 +118,7 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", vendedor.idCiudad);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", vendedor.Ciudad.nombre);
             return View(vendedor);
         }
 
