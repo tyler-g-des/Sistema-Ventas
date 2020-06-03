@@ -50,9 +50,9 @@ namespace PrimerParcial.Controllers
         // GET: Articulos/Create
         public IActionResult Create()
         {
-            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "idClasificacionArticulos");
-            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "idMarca");
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor");
+            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos");
+            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre");
+            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre");
             return View();
         }
 
@@ -69,9 +69,9 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "idClasificacionArticulos", articulo.idClasificacionArticulos);
-            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "idMarca", articulo.idMarca);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", articulo.idSuplidor);
+            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.Suplidor.nombre);
+            ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.Marca.Nombre);
+            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
             return View(articulo);
         }
 
