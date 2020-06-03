@@ -48,7 +48,7 @@ namespace PrimerParcial.Controllers
         // GET: Ciudads/Create
         public IActionResult Create()
         {
-            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "idPais");
+            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "nombre");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "idPais", ciudad.idPais);
+            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "nombre", ciudad.idPais);
             return View(ciudad);
         }
 
@@ -82,7 +82,7 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "idPais", ciudad.idPais);
+            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "nombre", ciudad.idPais);
             return View(ciudad);
         }
 
@@ -118,7 +118,7 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "idPais", ciudad.idPais);
+            ViewData["idPais"] = new SelectList(_context.Paises, "idPais", "nombre", ciudad.Pais.nombre);
             return View(ciudad);
         }
 

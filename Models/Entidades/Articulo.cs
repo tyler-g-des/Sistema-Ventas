@@ -26,7 +26,7 @@ namespace PrimerParcial.Models.Entidades
         public int idMarca { get; set; }
         public Marca Marca { get; set; }
 
-        //-------------------------Clasificacion Suplidor-----------
+        //-------------------------Clasificacion Articulo -----------
         [Display(Name = "ClasificacionArticulos")]
         [ForeignKey("ClasificacionArticulos")]
         public int idClasificacionArticulos { get; set; }
