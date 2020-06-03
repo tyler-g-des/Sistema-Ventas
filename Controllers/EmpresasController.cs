@@ -48,7 +48,7 @@ namespace PrimerParcial.Controllers
         // GET: Empresas/Create
         public IActionResult Create()
         {
-            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "idUbicacion");
+            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "Sector");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "idUbicacion", empresa.idUbicacion);
+            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "Sector", empresa.Ubicacion.Sector);
             return View(empresa);
         }
 
@@ -82,7 +82,7 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "idUbicacion", empresa.idUbicacion);
+            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "Sector", empresa.idUbicacion);
             return View(empresa);
         }
 
@@ -118,7 +118,7 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "idUbicacion", empresa.idUbicacion);
+            ViewData["idUbicacion"] = new SelectList(_context.Ubicaciones, "idUbicacion", "Sector", empresa.Ubicacion.Sector);
             return View(empresa);
         }
 
