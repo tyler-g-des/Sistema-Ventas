@@ -49,8 +49,8 @@ namespace PrimerParcial.Controllers
         // GET: Suplidores/Create
         public IActionResult Create()
         {
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad");
-            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "idClasificacionSuplidor");
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre");
+            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "TipoDeSuplidor");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", suplidor.idCiudad);
-            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "idClasificacionSuplidor", suplidor.idClasificacionSuplidor);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombrw", suplidor.Ciudad.nombre);
+            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "TipoDeSuplidor", suplidor.clasificacionSuplidor.TipoDeSuplidor);
             return View(suplidor);
         }
 
@@ -85,8 +85,8 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", suplidor.idCiudad);
-            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "idClasificacionSuplidor", suplidor.idClasificacionSuplidor);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", suplidor.idCiudad);
+            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "TipoDeSuplidor", suplidor.idClasificacionSuplidor);
             return View(suplidor);
         }
 
@@ -122,8 +122,8 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "idCiudad", suplidor.idCiudad);
-            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "idClasificacionSuplidor", suplidor.idClasificacionSuplidor);
+            ViewData["idCiudad"] = new SelectList(_context.Ciudades, "idCiudad", "nombre", suplidor.Ciudad.nombre);
+            ViewData["idClasificacionSuplidor"] = new SelectList(_context.ClasificacionSuplidor, "idClasificacionSuplidor", "TipoDeSuplidor", suplidor.clasificacionSuplidor.TipoDeSuplidor);
             return View(suplidor);
         }
 

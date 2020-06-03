@@ -43,10 +43,10 @@
                 @Html.DisplayFor(modelItem => item.email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Ciudad.idCiudad)
+                @Html.DisplayFor(modelItem => item.Ciudad.nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.clasificacionSuplidor.idClasificacionSuplidor)
+                @Html.DisplayFor(modelItem => item.clasificacionSuplidor.TipoDeSuplidor)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.idSuplidor">Edit</a> |
