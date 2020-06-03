@@ -27,5 +27,12 @@ namespace PrimerParcial.Data
         public DbSet<PrimerParcial.Models.Clasificaciones.ClasificacionSuplidor> ClasificacionSuplidor { get; set; }
         public DbSet<PrimerParcial.Models.Clasificaciones.ClasificacionArticulos> ClasificacionArticulos { get; set; }
 
+        public DbSet<PuestoDeTrabajo> puestoDeTrabajos { get; set; }
+        public DbSet<Ubicacion> Ubicaciones { get; set; }
+        public DbSet<Vendedor> Vendedores { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+
+ 
     }
 }

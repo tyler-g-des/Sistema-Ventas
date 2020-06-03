@@ -139,6 +139,62 @@ namespace PrimerParcial.Migrations
                     b.ToTable("Clientes");
                 });
 
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Empleado", b =>
+                {
+                    b.Property<int>("idEmpleado")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Direccion");
+
+                    b.Property<int?>("DocumentoidTipoDeDocumento");
+
+                    b.Property<string>("email");
+
+                    b.Property<int>("idCiudad");
+
+                    b.Property<int>("idEmpresa");
+
+                    b.Property<int>("idTipoDocumento");
+
+                    b.Property<string>("nombre");
+
+                    b.Property<string>("telefono");
+
+                    b.HasKey("idEmpleado");
+
+                    b.HasIndex("DocumentoidTipoDeDocumento");
+
+                    b.HasIndex("idCiudad");
+
+                    b.HasIndex("idEmpresa");
+
+                    b.ToTable("Empleados");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Empresa", b =>
+                {
+                    b.Property<int>("idEmpresa")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CodPostal");
+
+                    b.Property<string>("Direccion");
+
+                    b.Property<int>("idUbicacion");
+
+                    b.Property<string>("nombre");
+
+                    b.Property<string>("telefono");
+
+                    b.HasKey("idEmpresa");
+
+                    b.HasIndex("idUbicacion");
+
+                    b.ToTable("Empresas");
+                });
+
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Marca", b =>
                 {
                     b.Property<int>("idMarca")
@@ -167,6 +223,21 @@ namespace PrimerParcial.Migrations
                     b.HasKey("idPais");
 
                     b.ToTable("Paises");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.PuestoDeTrabajo", b =>
+                {
+                    b.Property<int>("idPuesto")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("descripcion");
+
+                    b.Property<string>("nombre");
+
+                    b.HasKey("idPuesto");
+
+                    b.ToTable("puestoDeTrabajos");
                 });
 
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Suplidor", b =>
@@ -207,6 +278,52 @@ namespace PrimerParcial.Migrations
                     b.HasKey("idTipoDeDocumento");
 
                     b.ToTable("tipoDeDocumentos");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Ubicacion", b =>
+                {
+                    b.Property<int>("idUbicacion")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Calle");
+
+                    b.Property<int>("NoCasa");
+
+                    b.Property<string>("Sector");
+
+                    b.HasKey("idUbicacion");
+
+                    b.ToTable("Ubicaciones");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Vendedor", b =>
+                {
+                    b.Property<int>("idVendedor")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Direccion");
+
+                    b.Property<int?>("DocumentoidTipoDeDocumento");
+
+                    b.Property<string>("email");
+
+                    b.Property<int>("idCiudad");
+
+                    b.Property<int>("idTipoDocumento");
+
+                    b.Property<string>("nombre");
+
+                    b.Property<string>("telefono");
+
+                    b.HasKey("idVendedor");
+
+                    b.HasIndex("DocumentoidTipoDeDocumento");
+
+                    b.HasIndex("idCiudad");
+
+                    b.ToTable("Vendedores");
                 });
 
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Articulo", b =>
@@ -252,6 +369,31 @@ namespace PrimerParcial.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Empleado", b =>
+                {
+                    b.HasOne("PrimerParcial.Models.Entidades.TipoDeDocumento", "Documento")
+                        .WithMany()
+                        .HasForeignKey("DocumentoidTipoDeDocumento");
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Ciudad", "Ciudad")
+                        .WithMany()
+                        .HasForeignKey("idCiudad")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Empresa", "Empresa")
+                        .WithMany()
+                        .HasForeignKey("idEmpresa")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Empresa", b =>
+                {
+                    b.HasOne("PrimerParcial.Models.Entidades.Ubicacion", "Ubicacion")
+                        .WithMany()
+                        .HasForeignKey("idUbicacion")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Suplidor", b =>
                 {
                     b.HasOne("PrimerParcial.Models.Entidades.Ciudad", "Ciudad")
@@ -262,6 +404,18 @@ namespace PrimerParcial.Migrations
                     b.HasOne("PrimerParcial.Models.Clasificaciones.ClasificacionSuplidor", "clasificacionSuplidor")
                         .WithMany()
                         .HasForeignKey("idClasificacionSuplidor")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Vendedor", b =>
+                {
+                    b.HasOne("PrimerParcial.Models.Entidades.TipoDeDocumento", "Documento")
+                        .WithMany()
+                        .HasForeignKey("DocumentoidTipoDeDocumento");
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Ciudad", "Ciudad")
+                        .WithMany()
+                        .HasForeignKey("idCiudad")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
