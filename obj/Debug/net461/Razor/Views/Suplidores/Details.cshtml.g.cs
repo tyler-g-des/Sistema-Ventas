@@ -164,7 +164,7 @@ using PrimerParcial.Models;
             WriteLiteral("\n        </dd>\n    </dl>\n</div>\n<div>\n    ");
             EndContext();
             BeginContext(1068, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "181be73c43dd4cb8954d2d1543bf436f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ebfc011359c412e9b24d16d4ff5e534", async() => {
                 BeginContext(1122, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -199,7 +199,7 @@ using PrimerParcial.Models;
             WriteLiteral(" |\n    ");
             EndContext();
             BeginContext(1137, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24c1aa8b25f24a5da6d37f849e2fe4d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43ffc27aa68f430b91a2277aaf28b542", async() => {
                 BeginContext(1159, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
