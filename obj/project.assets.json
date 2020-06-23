@@ -9784,11 +9784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+      "projectUniqueName": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial\\PrimerParcial.csproj",
       "projectName": "PrimerParcial",
-      "projectPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+      "projectPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial\\PrimerParcial.csproj",
       "packagesPath": "C:\\Users\\tyler.diaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\obj\\",
+      "outputPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
