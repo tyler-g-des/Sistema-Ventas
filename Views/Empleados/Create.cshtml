@@ -46,16 +46,10 @@
                 <span asp-validation-for="idTipoDocumento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input class="btn btn-success" type="submit" value="Create" class="btn btn-default" />
+                <a class="btn btn-primary" asp-action="Index">Back to List</a>
+
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
