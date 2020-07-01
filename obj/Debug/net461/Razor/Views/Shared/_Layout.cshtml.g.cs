@@ -161,7 +161,7 @@ using PrimerParcial.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(35, 1418, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26728bdc960e4b92a7bd717cf758cc5b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11e080af17904bc5b23b344bbb8d0308", async() => {
                 BeginContext(41, 349, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -174,7 +174,7 @@ using PrimerParcial.Models;
     ");
                 EndContext();
                 BeginContext(390, 82, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f004c9cd35444eaea919a527c598ddd6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "21d97a2fc16d4b589108df449caba5eb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -193,7 +193,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Ionicons -->\r\n    <link rel=\"stylesheet\" href=\"https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css\">\r\n    <!-- Tempusdominus Bootstrap 4 -->\r\n    ");
                 EndContext();
                 BeginContext(645, 113, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8f089436b8b64317b2c856a18671961c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2b498fa20b8a4ab9be086e520f420b8e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -212,7 +212,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- iCheck -->\r\n    ");
                 EndContext();
                 BeginContext(785, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c38a1b0d6ba342918a77104a7eaddada", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2f90f7dbcbc54ec9949890c787fd3626", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -231,7 +231,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- JQVMap -->\r\n    ");
                 EndContext();
                 BeginContext(903, 71, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42a05c2da2ec4afd905ddb46a26e08be", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "04864fded91b4bd2b569aba21e3ecda4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -250,7 +250,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Theme style -->\r\n    ");
                 EndContext();
                 BeginContext(1006, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "22c084a4808e4896bd41e1fe91ae96be", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3f1dfe419c8c4f6bb127f67b4d06ba57", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -269,7 +269,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- overlayScrollbars -->\r\n    ");
                 EndContext();
                 BeginContext(1111, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "86f1be884bb342f688adf5a4835d4f9a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "96deef18850f4589853f42b85200665f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -288,7 +288,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Daterange picker -->\r\n    ");
                 EndContext();
                 BeginContext(1245, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "963be3fdf3e8438baddd147157242429", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fe014293157944ce85da82c397f156c8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -307,7 +307,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- summernote -->\r\n    ");
                 EndContext();
                 BeginContext(1361, 83, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1167ee8e2d97472cb01c0454e14675d7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9ee4cd2b0c4b41588cdfc5e76f313e65", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -341,7 +341,7 @@ using PrimerParcial.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(1455, 47167, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3da83bbddcac4a11b6b2e96b27c9ed35", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3b6e4b64a8a4515bdde6366d6387f63", async() => {
                 BeginContext(1511, 758, true);
                 WriteLiteral(@"
     <div class=""wrapper"">
@@ -365,7 +365,7 @@ using PrimerParcial.Models;
             ");
                 EndContext();
                 BeginContext(2269, 506, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b46b41e1970945a3998e19d73e05669a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8ef4d38a4724032b3bc52e0316b8947", async() => {
                     BeginContext(2300, 468, true);
                     WriteLiteral(@"
                 <div class=""input-group input-group-sm"">
@@ -411,7 +411,7 @@ using PrimerParcial.Models;
                                 ");
                 EndContext();
                 BeginContext(3478, 103, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "182209ebb5e142bf8d2e4cbf71009818", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5186195f169d4df3b2a366ac098b53d7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -447,7 +447,7 @@ using PrimerParcial.Models;
                                 ");
                 EndContext();
                 BeginContext(4545, 103, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4da3d0ea2b7749e890b97033039b6777", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e133b8e82c454ffd8a858166dd5ba392", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -483,7 +483,7 @@ using PrimerParcial.Models;
                                 ");
                 EndContext();
                 BeginContext(5606, 103, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "70ccafbb38fc480f9a142b8c56f5d6f4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a773e06f8b374e7c89578ceb472a15be", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -560,7 +560,7 @@ using PrimerParcial.Models;
                 WriteLiteral("           <a href=\"/\" class=\"brand-link\">\r\n                ");
                 EndContext();
                 BeginContext(8841, 131, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "01c3396032054f8db9450db47d25aa8b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f565d16ed36b42069f05cb56c11f6e45", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -590,7 +590,7 @@ using PrimerParcial.Models;
                         ");
                 EndContext();
                 BeginContext(9320, 97, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c8fed78e16a54d208dab85f67da1256d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c46a5dfa059d4ba99d62a21ee364756c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -631,7 +631,7 @@ using PrimerParcial.Models;
                 WriteLiteral("            <ul class=\"nav nav-treeview\">\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(10575, 256, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19bf270f23174df992d12a7d8a054853", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5bd5aaee60d3480c9563b9306d543a17", async() => {
                     BeginContext(10652, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Clientes</p>\r\n                                    ");
                     EndContext();
@@ -658,7 +658,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(10965, 258, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "310aa468b6ff46abb7c226a632a0ae44", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4af58e28cc8e4b7bb2a679be9817015d", async() => {
                     BeginContext(11043, 176, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Empleados</p>\r\n                                    ");
                     EndContext();
@@ -685,7 +685,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(11357, 256, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "120f10b904e7421ca79ee96ab561fb86", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc396e2bba2c4cc5b9cc650416bb7f6e", async() => {
                     BeginContext(11434, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Empresas</p>\r\n                                    ");
                     EndContext();
@@ -712,7 +712,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(11749, 258, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b27af3134f404e748a30505ce006fa2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83dd466945c64c27900e784f955171bf", async() => {
                     BeginContext(11827, 176, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Articulos</p>\r\n                                    ");
                     EndContext();
@@ -739,7 +739,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(12141, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5847a0faa96f4a3c99700d7be462e8e7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ae14482a53a473c8eeaf0997ed8aeec", async() => {
                     BeginContext(12216, 173, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Marcas</p>\r\n                                    ");
                     EndContext();
@@ -766,7 +766,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(12527, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "090b73f22fa7459e918475d33c506fd2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "addaec38397e42c19cecf2b88a529ab3", async() => {
                     BeginContext(12602, 173, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Paises</p>\r\n                                    ");
                     EndContext();
@@ -793,7 +793,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(12913, 255, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ea19a21a34b4c139ab56f50e0eacab4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38e2705d8a094f3380119759e57588d9", async() => {
                     BeginContext(12989, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Ciudades</p>\r\n                                    ");
                     EndContext();
@@ -820,7 +820,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(13302, 273, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38f297a5e0f642c883664c3994b374c9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5e537c8ad0754c2c84292f3be14868b7", async() => {
                     BeginContext(13387, 184, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Puesto de Trabajo</p>\r\n                                    ");
                     EndContext();
@@ -847,7 +847,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(13709, 285, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21fccc1efb8a4d0b9dd619ed0a9c4bc0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e492126b463f43838df78265289641d9", async() => {
                     BeginContext(13800, 190, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Clasificacion Articulos</p>\r\n                                    ");
                     EndContext();
@@ -874,7 +874,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(14128, 283, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "509d685549764bd187c167ab161bb12e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b6cfabf359541a78bec0efb2ec82920", async() => {
                     BeginContext(14218, 189, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Clasificacion Clientes</p>\r\n                                    ");
                     EndContext();
@@ -901,7 +901,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(14545, 287, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "406b657cae8743418573a1ece119aaea", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a859d6bc88d4d24833c45a81f52da55", async() => {
                     BeginContext(14637, 191, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Clasificacion Suplidores</p>\r\n                                    ");
                     EndContext();
@@ -947,7 +947,7 @@ using PrimerParcial.Models;
                             ");
                 EndContext();
                 BeginContext(15730, 366, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b620b04b3e34103b07aff64acf694b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26f9e3013e9c42e592a17e73a98c1215", async() => {
                     BeginContext(15787, 305, true);
                     WriteLiteral(@"
                                 <i class=""nav-icon fas fa-th""></i>
@@ -988,7 +988,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(16789, 249, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b44e07a17a26414b9b09c4b6e5f73182", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b92e7b61ab84920bff0c313c1b43f68", async() => {
                     BeginContext(16853, 181, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Top Navigation</p>\r\n                                    ");
                     EndContext();
@@ -1010,7 +1010,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(17170, 267, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "319c3d3f979843eda900f2831737269a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc9c7b253b204617abf69e5df4325891", async() => {
                     BeginContext(17242, 191, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Top Navigation + Sidebar</p>\r\n                                    ");
                     EndContext();
@@ -1032,7 +1032,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(17569, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "701366ae26344ca89cc72bdfe64b5759", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "818d39088331402691b5dae892a65854", async() => {
                     BeginContext(17631, 172, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Boxed</p>\r\n                                    ");
                     EndContext();
@@ -1054,7 +1054,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(17939, 254, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42263a7ffc4a4ab7bb9af21923062ce7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59053deba1cd4c3f9e65524f57987f61", async() => {
                     BeginContext(18009, 180, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Fixed Sidebar</p>\r\n                                    ");
                     EndContext();
@@ -1076,7 +1076,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(18325, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58e4ea405dc84ea6a98739b09921de54", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b37829181d34e9d813398bd496b8faf", async() => {
                     BeginContext(18394, 179, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Fixed Navbar</p>\r\n                                    ");
                     EndContext();
@@ -1098,7 +1098,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(18709, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff877530ca5a4a0d9bb9ba1454db80a0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2aeb80f980240a5a79076ed204c53ae", async() => {
                     BeginContext(18778, 179, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Fixed Footer</p>\r\n                                    ");
                     EndContext();
@@ -1120,7 +1120,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(19093, 262, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ed9e83d20a34ddeb041ca78ed173b7f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6967dd7957b4bd9858a919902cb9527", async() => {
                     BeginContext(19167, 184, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Collapsed Sidebar</p>\r\n                                    ");
                     EndContext();
@@ -1156,7 +1156,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(20036, 242, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65a5a94197af4645ac2f5a1822b95fc6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56979f0126504763a50af626a5015792", async() => {
                     BeginContext(20100, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>ChartJS</p>\r\n                                    ");
                     EndContext();
@@ -1178,7 +1178,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(20410, 236, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0826e22b22e44796aa40eed6568faa63", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce3234db31c048869b5e946a87034300", async() => {
                     BeginContext(20471, 171, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Flot</p>\r\n                                    ");
                     EndContext();
@@ -1200,7 +1200,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(20778, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a3a0b185a0d4812a733c77805a17862", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92c229696c0147caacc900aabb75b65f", async() => {
                     BeginContext(20853, 173, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Inline</p>\r\n                                    ");
                     EndContext();
@@ -1241,7 +1241,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(21711, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95da4914e5534527a3a60dc21cd109c1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c1b26b475d14442abbb2cff94814062", async() => {
                     BeginContext(21771, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>General</p>\r\n                                    ");
                     EndContext();
@@ -1263,7 +1263,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(22081, 234, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e4bdbdb4f564eeb8a218823bc4633cd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dee581e653b346ceb90c4185ea40d8e2", async() => {
                     BeginContext(22139, 172, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Icons</p>\r\n                                    ");
                     EndContext();
@@ -1285,7 +1285,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(22447, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aaf314f364274a298f0719b10bb8e41e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d64ab7b7007c49e68f4f434d36d26764", async() => {
                     BeginContext(22507, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Buttons</p>\r\n                                    ");
                     EndContext();
@@ -1307,7 +1307,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(22817, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47e8ab8f929540ea950367af4e588921", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f3124dca67f4c32ada9ce4ce6b21a28", async() => {
                     BeginContext(22877, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Sliders</p>\r\n                                    ");
                     EndContext();
@@ -1329,7 +1329,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(23187, 245, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e1a066ddac54a6fb9566a28cf7a8bca", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36a3f981e3184149b2153f0bf6ac5fcd", async() => {
                     BeginContext(23246, 182, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Modals & Alerts</p>\r\n                                    ");
                     EndContext();
@@ -1351,7 +1351,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(23564, 243, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe2f108f24414ab0aa8c3d2bb90c39aa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3df8982d153e488ab81bc5c89acc541f", async() => {
                     BeginContext(23623, 180, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Navbar & Tabs</p>\r\n                                    ");
                     EndContext();
@@ -1373,7 +1373,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(23939, 240, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de80fd1fb3b94f978090f7e58b6b47fc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "744537ff4c5249e9b406c3e25e548acb", async() => {
                     BeginContext(24000, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Timeline</p>\r\n                                    ");
                     EndContext();
@@ -1395,7 +1395,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(24311, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3da992e8cc9347558356f9dfc4890525", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5cb357870af4c01aee262facb1c15f9", async() => {
                     BeginContext(24371, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Ribbons</p>\r\n                                    ");
                     EndContext();
@@ -1431,7 +1431,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(25224, 250, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de2bdf2d8d5e4f4082e5e6c81b4b2d97", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ea57968033047ee89fde39ab132d843", async() => {
                     BeginContext(25287, 183, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>General Elements</p>\r\n                                    ");
                     EndContext();
@@ -1453,7 +1453,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(25606, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8afc15519d9b411aafb52cf89dd3210b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85bdcd0b62974c9d81388dc0667e1cb4", async() => {
                     BeginContext(25670, 184, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Advanced Elements</p>\r\n                                    ");
                     EndContext();
@@ -1475,7 +1475,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(25990, 241, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1aae0b0682248a3bf3b362bd0182d80", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "967401e5d75f4777b4cf0c82a99f64b4", async() => {
                     BeginContext(26053, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Editors</p>\r\n                                    ");
                     EndContext();
@@ -1497,7 +1497,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(26363, 247, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "859deb036e7047d4be42e52fa87b058e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b01132833834b50b87ef6574ae63cdf", async() => {
                     BeginContext(26429, 177, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Validation</p>\r\n                                    ");
                     EndContext();
@@ -1533,7 +1533,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(27287, 247, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1338fce0dde64aeba54ae3469f74a4fa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87680a7918d940a387b4d156746db745", async() => {
                     BeginContext(27350, 180, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Simple Tables</p>\r\n                                    ");
                     EndContext();
@@ -1555,7 +1555,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(27666, 242, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65cb0b8ab49c45ce99b36c1dec13305e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30903d77823a4a51a92ed921b69485b6", async() => {
                     BeginContext(27727, 177, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>DataTables</p>\r\n                                    ");
                     EndContext();
@@ -1577,7 +1577,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(28040, 240, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "594c46fa0fad40b6ab347e6b543d8533", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de82fa2bff07418eb24545f9e90a5d87", async() => {
                     BeginContext(28103, 173, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>jsGrid</p>\r\n                                    ");
                     EndContext();
@@ -1599,7 +1599,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                            </ul>\r\n                        </li>\r\n                        <li class=\"nav-header\">EXAMPLES</li>\r\n                        <li class=\"nav-item\">\r\n                            ");
                 EndContext();
                 BeginContext(28524, 374, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "951dacc09ccd4e73b4c1ae4c645734e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8925ba33afb454eb396771391b34be1", async() => {
                     BeginContext(28582, 312, true);
                     WriteLiteral(@"
                                 <i class=""nav-icon far fa-calendar-alt""></i>
@@ -1627,7 +1627,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                        </li>\r\n                        <li class=\"nav-item\">\r\n                            ");
                 EndContext();
                 BeginContext(29006, 282, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32f66e3d2f7a437ba93e7d82c9e3f3e0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e143ba22448e49ee878e2c2d4742c664", async() => {
                     BeginContext(29063, 221, true);
                     WriteLiteral("\r\n                                <i class=\"nav-icon far fa-image\"></i>\r\n                                <p>\r\n                                    Gallery\r\n                                </p>\r\n                            ");
                     EndContext();
@@ -1661,7 +1661,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(29895, 241, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0d8d1bf642045398d6ceb2f2a82928b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65f3fa9616c4b13b6b3f84991b86eab", async() => {
                     BeginContext(29960, 172, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Inbox</p>\r\n                                    ");
                     EndContext();
@@ -1683,7 +1683,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(30268, 243, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "956c184616d947109c03e5312970256e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a883148cd732421c9d6ad7f170d9a25e", async() => {
                     BeginContext(30333, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Compose</p>\r\n                                    ");
                     EndContext();
@@ -1705,7 +1705,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(30643, 242, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9a9ff2b130946a494aa2738ea07c253", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74bbf3b6fa01443fa7c27cb2225cfc8e", async() => {
                     BeginContext(30710, 171, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Read</p>\r\n                                    ");
                     EndContext();
@@ -1741,7 +1741,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(31560, 244, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9200c48c1e8a4fdc80bfd842537863ed", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "910652df77e649ffaccafc25191cf83a", async() => {
                     BeginContext(31626, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Invoice</p>\r\n                                    ");
                     EndContext();
@@ -1763,7 +1763,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(31936, 244, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99dd14cc052349bfbf7a3d3b2878fc8e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6b30136aff0489096ee22c02df6ec66", async() => {
                     BeginContext(32002, 174, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Profile</p>\r\n                                    ");
                     EndContext();
@@ -1785,7 +1785,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(32312, 250, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d955969e0e048bcb2a9558e3a909885", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d3af931201541789528a599162dfee3", async() => {
                     BeginContext(32381, 177, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>E-commerce</p>\r\n                                    ");
                     EndContext();
@@ -1807,7 +1807,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(32694, 246, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "034962875ccb4b3492ae94d61a4187f8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f417cb8a964946e782d2e2f585693a14", async() => {
                     BeginContext(32761, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Projects</p>\r\n                                    ");
                     EndContext();
@@ -1829,7 +1829,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(33072, 252, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f969e1155724ed1b293dd8aae3f93ca", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb146972036e45b9b779a078ea04adfa", async() => {
                     BeginContext(33142, 178, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Project Add</p>\r\n                                    ");
                     EndContext();
@@ -1851,7 +1851,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(33456, 254, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b34677f3c9b644cda9d02e02dffd15e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fde0891f10ff47b1a25cae8bcec36ba6", async() => {
                     BeginContext(33527, 179, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Project Edit</p>\r\n                                    ");
                     EndContext();
@@ -1873,7 +1873,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(33842, 258, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9f58c5b2919400eb7db2753c493d561", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b85f77d70f134eadb67499cd64fae071", async() => {
                     BeginContext(33915, 181, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Project Detail</p>\r\n                                    ");
                     EndContext();
@@ -1895,7 +1895,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(34232, 246, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dffd2e3bde7349ea93590aa719236bd4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c316f79c136e420cbd76507425db4395", async() => {
                     BeginContext(34299, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Contacts</p>\r\n                                    ");
                     EndContext();
@@ -1931,7 +1931,7 @@ using PrimerParcial.Models;
                                     ");
                 EndContext();
                 BeginContext(35161, 240, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3eb977c5125f436fb911bd45bda967e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5db12192d88142418bee26f2668fe867", async() => {
                     BeginContext(35225, 172, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Login</p>\r\n                                    ");
                     EndContext();
@@ -1953,7 +1953,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(35533, 246, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec7fbb29504e4799a7b95e14c5be3fde", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5833118209e49339026a4eec2c474f8", async() => {
                     BeginContext(35600, 175, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Register</p>\r\n                                    ");
                     EndContext();
@@ -1975,7 +1975,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(35911, 260, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47b73a3c8d7a490d94478d3a87681898", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e620e13b69fd41379a5c48a1515e7d86", async() => {
                     BeginContext(35985, 182, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Forgot Password</p>\r\n                                    ");
                     EndContext();
@@ -1997,7 +1997,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(36303, 262, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "847a8d7e8d7e4cc894239fdc9e954da1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6200c50657b475d8a3f6eb788511aa2", async() => {
                     BeginContext(36378, 183, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Recover Password</p>\r\n                                    ");
                     EndContext();
@@ -2019,7 +2019,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(36697, 250, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6af676b91d9346e4afcc2578f9cc8ccc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76f8b2aed7fb4d25a383a16444fcb892", async() => {
                     BeginContext(36766, 177, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Lockscreen</p>\r\n                                    ");
                     EndContext();
@@ -2041,7 +2041,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(37079, 262, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "686ca2ccb40d436ba83ff62e5163c80a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "684c913b55d64dea8786153e6f6b53eb", async() => {
                     BeginContext(37154, 183, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Legacy User Menu</p>\r\n                                    ");
                     EndContext();
@@ -2063,7 +2063,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(37473, 256, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc8b80222e394f65ac5a2400923759a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fad454a857204cf096253b0fe96264fe", async() => {
                     BeginContext(37545, 180, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Language Menu</p>\r\n                                    ");
                     EndContext();
@@ -2085,7 +2085,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(37861, 242, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0862cc17cf724344925f24bd1ba07240", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d2bceecd1d742d495eab80e96f909c5", async() => {
                     BeginContext(37923, 176, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Error 404</p>\r\n                                    ");
                     EndContext();
@@ -2107,7 +2107,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(38235, 242, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbe5bd0111a24e4da3ede602a5993e25", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38433529646243deb7b7a0cfc9fdead8", async() => {
                     BeginContext(38297, 176, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Error 500</p>\r\n                                    ");
                     EndContext();
@@ -2129,7 +2129,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(38609, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1478ef940df40bfa005e9440e212a18", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05f73a00763f46208a978aa092ae98db", async() => {
                     BeginContext(38672, 171, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Pace</p>\r\n                                    ");
                     EndContext();
@@ -2151,7 +2151,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n                                </li>\r\n                                <li class=\"nav-item\">\r\n                                    ");
                 EndContext();
                 BeginContext(38979, 245, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b674d75a6d564027bf09b21e1b1a6988", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f6d48855fe54e53bcfd5038bf962885", async() => {
                     BeginContext(39043, 177, true);
                     WriteLiteral("\r\n                                        <i class=\"far fa-circle nav-icon\"></i>\r\n                                        <p>Blank Page</p>\r\n                                    ");
                     EndContext();
@@ -2345,7 +2345,7 @@ using PrimerParcial.Models;
     ");
                 EndContext();
                 BeginContext(46813, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7b362c4d8d9447b9b31fabff61eacd4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e315dd8ef95442469e1030923a2bac65", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2363,7 +2363,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- jQuery UI 1.11.4 -->\r\n    ");
                 EndContext();
                 BeginContext(46913, 69, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb9465be14414c24971b3bc726c32792", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e84d8f3c03574811a870b284c14ca159", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2381,7 +2381,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->\r\n    <script>\r\n        $.widget.bridge(\'uibutton\', $.ui.button)\r\n    </script>\r\n    <!-- Bootstrap 4 -->\r\n    ");
                 EndContext();
                 BeginContext(47168, 79, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0acd7e47f2744c1aaaa564903079fba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc9e0cede7344c309441f8c8459a69de", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2399,7 +2399,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- ChartJS -->\r\n    ");
                 EndContext();
                 BeginContext(47275, 64, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b75e3a7a9dec485bb2fb6c289cbe0192", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a061fa7d56a4ed9afc746149267fdd3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2417,7 +2417,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Sparkline -->\r\n    ");
                 EndContext();
                 BeginContext(47369, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6736f40325e043deb601fee54c55e780", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30332ec989254da3a3d800c3f4010d50", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2435,7 +2435,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- JQVMap -->\r\n    ");
                 EndContext();
                 BeginContext(47462, 68, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad89329c85ed448591f3d8373abbad8b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da71158d2b5041c7b8ee354f9f8166d7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2453,7 +2453,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(47536, 73, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0acb8596517e492f8fd188f1580c40f5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7e0dd6ee4c24d999c289b48e4b5e797", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2471,7 +2471,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- jQuery Knob Chart -->\r\n    ");
                 EndContext();
                 BeginContext(47647, 73, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4894e07ab29d49d680b2ac95d943f6d1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93f8430cd7294c7886968875513c567a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2489,7 +2489,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- daterangepicker -->\r\n    ");
                 EndContext();
                 BeginContext(47756, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15627769821746fdb64edd11c1cc7fc2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bd03cb41ca049c7b5eb88bf5390b36a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2507,7 +2507,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(47825, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b68b539b5a6497f829e88eedb0d2714", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f8b60e84f6f4a6d84211257dccc2c17", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2525,7 +2525,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Tempusdominus Bootstrap 4 -->\r\n    ");
                 EndContext();
                 BeginContext(47948, 104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b13d84aa1894db89844e10912967c4a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c12bac25689d4ac1a27b402b890f5e1d", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2543,7 +2543,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- Summernote -->\r\n    ");
                 EndContext();
                 BeginContext(48083, 75, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5600ec580d6a432f97b8a8707fe4677c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5cfefbc23c434a94cd49506b6d2b33", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2561,7 +2561,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- overlayScrollbars -->\r\n    ");
                 EndContext();
                 BeginContext(48196, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b064c3ed3fca42c491fde833b9304287", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0931206b042f40b88ff283e882867a58", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2579,7 +2579,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- AdminLTE App -->\r\n    ");
                 EndContext();
                 BeginContext(48324, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2df8e41cdcbf4fc5b74de0198b9c166d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77d057a8a32b456fa8a1b918a774c37c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2597,7 +2597,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->\r\n    ");
                 EndContext();
                 BeginContext(48455, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5960d7554cb540c69879f2f48364c369", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30cda92a17854105b226acbc8675eca6", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -2615,7 +2615,7 @@ using PrimerParcial.Models;
                 WriteLiteral("\r\n    <!-- AdminLTE for demo purposes -->\r\n    ");
                 EndContext();
                 BeginContext(48563, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9220e15843b24ed3a7baebf11e03e173", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a48e26cd64e4495a591f6b8f5d5fdf1", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
