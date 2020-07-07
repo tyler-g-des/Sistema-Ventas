@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,9 +12,13 @@ namespace PrimerParcial.Models.Entidades
         [Key]
         public int formaEnvioID { get; set; }
 
+        [Display(Name = "Suplidor")]
+        [ForeignKey("Suplidor")]
         public int idSuplidor { get; set; }
 
-        public int formaPago { get; set; }
+        [Display(Name = "Forma de Pago")]
+        [ForeignKey("formaPago")]
+        public int formaPagoID { get; set; }
 
         public DateTime formaEnvioDia { get; set; }
 
