@@ -1,0 +1,60 @@
+﻿@model PrimerParcial.Models.Entidades.Empleado
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Empresa.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ciudad.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.idTipoDocumento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.idTipoDocumento)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.idEmpleado">Edit</a> |
+    <a class="btn btn-primary" asp-action="Index">Back to List</a>
+</div>

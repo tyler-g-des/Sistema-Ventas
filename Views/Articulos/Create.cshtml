@@ -1,0 +1,50 @@
+﻿@model PrimerParcial.Models.Entidades.Articulo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Articulo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cantidad" class="control-label"></label>
+                <input asp-for="Cantidad" class="form-control" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idMarca" class="control-label"></label>
+                <select asp-for="idMarca" class ="form-control" asp-items="ViewBag.idMarca"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="idClasificacionArticulos" class="control-label"></label>
+                <select asp-for="idClasificacionArticulos" class ="form-control" asp-items="ViewBag.idClasificacionArticulos"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="idSuplidor" class="control-label"></label>
+                <select asp-for="idSuplidor" class ="form-control" asp-items="ViewBag.idSuplidor"></select>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Create" class="btn btn-default" />
+                <a class="btn btn-primary" asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
