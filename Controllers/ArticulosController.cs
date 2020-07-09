@@ -22,7 +22,7 @@ namespace PrimerParcial.Controllers
         // GET: Articulos
         public async Task<IActionResult> Index()
         {
-            var dataContext = _context.Articulo.Include(a => a.ClasificacionArticulos).Include(a => a.Marca).Include(a => a.Suplidor);
+           var dataContext = _context.Articulo.Include(a => a.ClasificacionArticulos).Include(a => a.Marca);
             return View(await dataContext.ToListAsync());
         }
 
@@ -37,7 +37,7 @@ namespace PrimerParcial.Controllers
             var articulo = await _context.Articulo
                 .Include(a => a.ClasificacionArticulos)
                 .Include(a => a.Marca)
-                .Include(a => a.Suplidor)
+              //  .Include(a => a.Suplidor)
                 .FirstOrDefaultAsync(m => m.idArticulo == id);
             if (articulo == null)
             {
@@ -69,9 +69,9 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.Suplidor.nombre);
+          //  ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.Suplidor.nombre);
             ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.Marca.Nombre);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
+           // ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
             return View(articulo);
         }
 
@@ -90,7 +90,7 @@ namespace PrimerParcial.Controllers
             }
             ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.idClasificacionArticulos);
             ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.idMarca);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.idSuplidor);
+           // ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.idSuplidor);
             return View(articulo);
         }
 
@@ -128,7 +128,7 @@ namespace PrimerParcial.Controllers
             }
             ViewData["idClasificacionArticulos"] = new SelectList(_context.ClasificacionArticulos, "idClasificacionArticulos", "TipoDeArticulos", articulo.ClasificacionArticulos.TipoDeArticulos);
             ViewData["idMarca"] = new SelectList(_context.Marca, "idMarca", "Nombre", articulo.Marca.Nombre);
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
+           // ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre", articulo.Suplidor.nombre);
             return View(articulo);
         }
 
@@ -143,7 +143,7 @@ namespace PrimerParcial.Controllers
             var articulo = await _context.Articulo
                 .Include(a => a.ClasificacionArticulos)
                 .Include(a => a.Marca)
-                .Include(a => a.Suplidor)
+               // .Include(a => a.Suplidor)
                 .FirstOrDefaultAsync(m => m.idArticulo == id);
             if (articulo == null)
             {

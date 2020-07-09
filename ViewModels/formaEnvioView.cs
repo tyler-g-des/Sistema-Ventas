@@ -14,6 +14,9 @@ namespace PrimerParcial.ViewModels
 
         public formaPago formaPago  { get; set; }
 
+        public formaEnvio formaEnvio { get; set; }
+
+
         [DataType(DataType.MultilineText)]
         public String Notas { get; set; }
 

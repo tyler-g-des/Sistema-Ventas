@@ -27,9 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.ClasificacionArticulos)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Suplidor)
-            </th>
+        
             <th></th>
         </tr>
     </thead>
@@ -51,9 +49,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ClasificacionArticulos.TipoDeArticulos)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Suplidor.nombre)
-            </td>
+       
             <td>
                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.idArticulo">Edit</a> |
                 <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.idArticulo">Details</a> |

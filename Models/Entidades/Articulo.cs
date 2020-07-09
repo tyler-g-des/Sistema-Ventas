@@ -1,6 +1,7 @@
 ﻿using PrimerParcial.Models.Clasificaciones;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -20,6 +21,11 @@ namespace PrimerParcial.Models.Entidades
         public int Cantidad { get; set; }
 
 
+        [DisplayName("Costo")]
+        [Required(ErrorMessage = "Completar el campo {0}")]
+        public decimal ArticleCost { get; set; }
+
+
         //-------------Marca------------
         [Display(Name = "Marca")]
         [ForeignKey("Marca")]
@@ -33,11 +39,6 @@ namespace PrimerParcial.Models.Entidades
         public ClasificacionArticulos ClasificacionArticulos { get; set; }
 
 
-        //----------------Suplidor------------------
-        [Display(Name = "Suplidor")]
-        [ForeignKey("Suplidor")]
-        public int idSuplidor { get; set; }
-        public Suplidor Suplidor { get; set; }
 
     }
 }

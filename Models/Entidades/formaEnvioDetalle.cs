@@ -9,6 +9,7 @@ namespace PrimerParcial.Models.Entidades
 {
     public class formaEnvioDetalle
     {
+        [Key]
         public int formaEnvioDetalleID { get; set; }
 
         [Display(Name = "Forma de Envio")]

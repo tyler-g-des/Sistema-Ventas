@@ -33,6 +33,12 @@ namespace PrimerParcial.Data
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
 
- 
+        public DbSet<formaEnvio> formaEnvios { get; set; }
+        public DbSet<formaEnvioDetalle> formaEnvioDetalles { get; set; }
+        public DbSet<formaPago> formaPagos { get; set; }
+        public DbSet<formaPagoArticulo> FormaPagoArticulos { get; set; }
+
+
+
     }
 }

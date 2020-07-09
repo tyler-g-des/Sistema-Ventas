@@ -1,0 +1,53 @@
+﻿@model IEnumerable<PrimerParcial.Models.Entidades.formaEnvio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.formaPagoID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.formaEnvioDia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suplidor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.formaPagoID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.formaEnvioDia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suplidor.idSuplidor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.formaEnvioID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.formaEnvioID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.formaEnvioID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
