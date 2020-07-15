@@ -9,14 +9,13 @@ namespace PrimerParcial.Models.Entidades
 {
     public class formaPago
     {
-
+        [Key]
         public int formaPagoID { get; set; }
 
-        public int formaPagoDescripcion { get; set; }
+        [Required]
+        [Display(Name = "Forma de Pago")]
+        public String formaPagoDescripcion { get; set; }
 
-        [Display(Name = "Forma Envio")]
-        [ForeignKey("formaEnvio")]
-        public virtual ICollection<formaEnvio> FormaEnvios { get; set; }
 
     }
 }

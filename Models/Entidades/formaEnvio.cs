@@ -12,24 +12,10 @@ namespace PrimerParcial.Models.Entidades
         [Key]
         public int formaEnvioID { get; set; }
 
-        [Display(Name = "Suplidor")]
-        [ForeignKey("Suplidor")]
-        public int idSuplidor { get; set; }
-
-        [Display(Name = "Forma de Pago")]
-        [ForeignKey("formaPago")]
-        public int formaPagoID { get; set; }
-
-        public DateTime formaEnvioDia { get; set; }
+        [Required]
+        [Display(Name = "Forma de Envio")]
+        public String formaEnvioDescripcion { get; set; }
 
 
-        [DataType(DataType.MultilineText)]
-        public string Nota { get; set; }
-
-        public Suplidor Suplidor { get; set; }
-
-        public formaPago FormaPago { get; set; }
-
-        public virtual ICollection<formaEnvioDetalle> FormaEnvioDetalles { get; set; }
     }
 }

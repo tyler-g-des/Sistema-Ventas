@@ -22,8 +22,7 @@ namespace PrimerParcial.Controllers
         // GET: formaEnvios
         public async Task<IActionResult> Index()
         {
-            var dataContext = _context.formaEnvios.Include(f => f.Suplidor);
-            return View(await dataContext.ToListAsync());
+            return View(await _context.formaEnvios.ToListAsync());
         }
 
         // GET: formaEnvios/Details/5
@@ -35,7 +34,6 @@ namespace PrimerParcial.Controllers
             }
 
             var formaEnvio = await _context.formaEnvios
-                .Include(f => f.Suplidor)
                 .FirstOrDefaultAsync(m => m.formaEnvioID == id);
             if (formaEnvio == null)
             {
@@ -48,7 +46,6 @@ namespace PrimerParcial.Controllers
         // GET: formaEnvios/Create
         public IActionResult Create()
         {
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor");
             return View();
         }
 
@@ -57,7 +54,7 @@ namespace PrimerParcial.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("formaEnvioID,idSuplidor,formaPagoID,formaEnvioDia,Nota")] formaEnvio formaEnvio)
+        public async Task<IActionResult> Create([Bind("formaEnvioID,formaEnvioDescripcion")] formaEnvio formaEnvio)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +62,6 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", formaEnvio.idSuplidor);
             return View(formaEnvio);
         }
 
@@ -82,7 +78,6 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", formaEnvio.idSuplidor);
             return View(formaEnvio);
         }
 
@@ -91,7 +86,7 @@ namespace PrimerParcial.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("formaEnvioID,idSuplidor,formaPagoID,formaEnvioDia,Nota")] formaEnvio formaEnvio)
+        public async Task<IActionResult> Edit(int id, [Bind("formaEnvioID,formaEnvioDescripcion")] formaEnvio formaEnvio)
         {
             if (id != formaEnvio.formaEnvioID)
             {
@@ -118,7 +113,6 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "idSuplidor", formaEnvio.idSuplidor);
             return View(formaEnvio);
         }
 
@@ -131,7 +125,6 @@ namespace PrimerParcial.Controllers
             }
 
             var formaEnvio = await _context.formaEnvios
-                .Include(f => f.Suplidor)
                 .FirstOrDefaultAsync(m => m.formaEnvioID == id);
             if (formaEnvio == null)
             {

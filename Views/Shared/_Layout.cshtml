@@ -176,7 +176,7 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         
                         <!--MANTENIMIENTOS-->
-                        <li class="nav-item has-treeview menu-open">
+                        <li class="nav-item has-treeview menu-close">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -222,7 +222,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a asp-area="" asp-controller="Paises" asp-action="Index" class="nav-link">
+                                    <a asp-area="" asp-controller="Pais" asp-action="Index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Paises</p>
                                     </a>
@@ -267,7 +267,7 @@
                         </li>
 
                         <!--OPERACIONES -->
-                        <li class="nav-item has-treeview menu-open">
+                        <li class="nav-item has-treeview menu-close">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -277,15 +277,35 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a asp-area="" asp-controller="Clientes" asp-action="Index" class="nav-link">
+                                    <a asp-area="" asp-controller="formaEnvios" asp-action="Index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Clientes</p>
+                                        <p>Forma de Envio</p>
                                     </a>
                                 </li>
 
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="formaPagos" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Forma de Pago</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="Ordens" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Crear Orden</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="OrdenDetalles" asp-action="Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Detalle de las ordenes</p>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-
+                        <!--
                         <li class="nav-item">
                             <a href="~/template/pages/widgets.html" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
@@ -781,6 +801,7 @@
                                 <p>Informational</p>
                             </a>
                         </li>
+                            -->
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -821,7 +842,7 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">TYLER</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.1.0-pre

@@ -20,9 +20,34 @@
     <Compile Remove="Migrations\20200603030352_empresa-empleado.Designer.cs" />
     <Compile Remove="Migrations\20200603031439_empresa-empleado.cs" />
     <Compile Remove="Migrations\20200603031439_empresa-empleado.Designer.cs" />
+    <Compile Remove="Migrations\20200707220840_practica3.cs" />
+    <Compile Remove="Migrations\20200707220840_practica3.Designer.cs" />
+    <Compile Remove="Migrations\20200710180114_arreglo.cs" />
+    <Compile Remove="Migrations\20200710180114_arreglo.Designer.cs" />
+    <Compile Remove="Migrations\20200710233741_arreglo.cs" />
+    <Compile Remove="Migrations\20200710233741_arreglo.Designer.cs" />
+    <Compile Remove="Migrations\20200710235821_arreglo.cs" />
+    <Compile Remove="Migrations\20200710235821_arreglo.Designer.cs" />
+    <Compile Remove="Migrations\20200713143647_formaEnvio-Pago.cs" />
+    <Compile Remove="Migrations\20200713143647_formaEnvio-Pago.Designer.cs" />
+    <Compile Remove="Migrations\20200713145308_solucion-formaPago.cs" />
+    <Compile Remove="Migrations\20200713145308_solucion-formaPago.Designer.cs" />
+    <Compile Remove="Migrations\20200713145448_forma-pago-envio.cs" />
+    <Compile Remove="Migrations\20200713145448_forma-pago-envio.Designer.cs" />
+    <Compile Remove="Migrations\20200713145526_forma-pago-envio.cs" />
+    <Compile Remove="Migrations\20200713145526_forma-pago-envio.Designer.cs" />
+    <Compile Remove="Migrations\20200713145812_forma-envio.cs" />
+    <Compile Remove="Migrations\20200713145812_forma-envio.Designer.cs" />
+    <Compile Remove="Migrations\20200713150017_forma-envio.cs" />
+    <Compile Remove="Migrations\20200713150017_forma-envio.Designer.cs" />
+    <Compile Remove="Migrations\20200713150518_forma-envio.cs" />
+    <Compile Remove="Migrations\20200713150518_forma-envio.Designer.cs" />
+    <Compile Remove="Migrations\20200713171154_orden-ordenDetalle.cs" />
+    <Compile Remove="Migrations\20200713171154_orden-ordenDetalle.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" Version="2.1.14" />
     <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.1" />
@@ -37,6 +62,14 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="Rotativa.AspNetCore" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System.ServiceModel.Routing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Routing" />
   </ItemGroup>
 
 </Project>

@@ -64,12 +64,7 @@ namespace PrimerParcial.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("ArticleCost");
-
                     b.Property<int>("Cantidad");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired();
 
                     b.Property<string>("Nombre");
 
@@ -86,8 +81,6 @@ namespace PrimerParcial.Migrations
                     b.HasIndex("idMarca");
 
                     b.ToTable("Articulo");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Articulo");
                 });
 
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Ciudad", b =>
@@ -204,50 +197,12 @@ namespace PrimerParcial.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Nota");
-
-                    b.Property<int>("formaEnvio");
-
-                    b.Property<DateTime>("formaEnvioDia");
-
-                    b.Property<int>("formaPagoID");
-
-                    b.Property<int>("idSuplidor");
+                    b.Property<string>("formaEnvioDescripcion")
+                        .IsRequired();
 
                     b.HasKey("formaEnvioID");
 
-                    b.HasIndex("formaEnvio");
-
-                    b.HasIndex("idSuplidor");
-
                     b.ToTable("formaEnvios");
-                });
-
-            modelBuilder.Entity("PrimerParcial.Models.Entidades.formaEnvioDetalle", b =>
-                {
-                    b.Property<int>("formaEnvioDetalleID")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<float>("cantidad");
-
-                    b.Property<decimal>("costo");
-
-                    b.Property<int>("formaEnvioID");
-
-                    b.Property<int?>("formaPagoID");
-
-                    b.Property<int>("idArticulo");
-
-                    b.HasKey("formaEnvioDetalleID");
-
-                    b.HasIndex("formaEnvioID");
-
-                    b.HasIndex("formaPagoID");
-
-                    b.HasIndex("idArticulo");
-
-                    b.ToTable("formaEnvioDetalles");
                 });
 
             modelBuilder.Entity("PrimerParcial.Models.Entidades.formaPago", b =>
@@ -256,7 +211,8 @@ namespace PrimerParcial.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("formaPagoDescripcion");
+                    b.Property<string>("formaPagoDescripcion")
+                        .IsRequired();
 
                     b.HasKey("formaPagoID");
 
@@ -276,6 +232,64 @@ namespace PrimerParcial.Migrations
                     b.HasKey("idMarca");
 
                     b.ToTable("Marca");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Orden", b =>
+                {
+                    b.Property<int>("ordenID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("fechaOrden");
+
+                    b.Property<int>("formaEnvioID");
+
+                    b.Property<int>("formaPagoID");
+
+                    b.Property<int>("idCliente");
+
+                    b.Property<decimal>("impuesto");
+
+                    b.Property<string>("observacion");
+
+                    b.Property<decimal>("subtotal");
+
+                    b.Property<decimal>("total");
+
+                    b.HasKey("ordenID");
+
+                    b.HasIndex("formaEnvioID");
+
+                    b.HasIndex("formaPagoID");
+
+                    b.HasIndex("idCliente");
+
+                    b.ToTable("Ordens");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.OrdenDetalle", b =>
+                {
+                    b.Property<int>("ordenDetallID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("cantidad");
+
+                    b.Property<int>("idArticulo");
+
+                    b.Property<int>("ordenID");
+
+                    b.Property<decimal>("precio");
+
+                    b.Property<decimal>("precioTotal");
+
+                    b.HasKey("ordenDetallID");
+
+                    b.HasIndex("idArticulo");
+
+                    b.HasIndex("ordenID");
+
+                    b.ToTable("ordenDetalles");
                 });
 
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Pais", b =>
@@ -394,17 +408,6 @@ namespace PrimerParcial.Migrations
                     b.ToTable("Vendedores");
                 });
 
-            modelBuilder.Entity("PrimerParcial.Models.Entidades.formaPagoArticulo", b =>
-                {
-                    b.HasBaseType("PrimerParcial.Models.Entidades.Articulo");
-
-                    b.Property<float>("ArticlePurchaseOrderQuantity");
-
-                    b.ToTable("formaPagoArticulo");
-
-                    b.HasDiscriminator().HasValue("formaPagoArticulo");
-                });
-
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Articulo", b =>
                 {
                     b.HasOne("PrimerParcial.Models.Clasificaciones.ClasificacionArticulos", "ClasificacionArticulos")
@@ -468,33 +471,34 @@ namespace PrimerParcial.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("PrimerParcial.Models.Entidades.formaEnvio", b =>
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Orden", b =>
                 {
-                    b.HasOne("PrimerParcial.Models.Entidades.formaPago", "FormaPago")
-                        .WithMany("FormaEnvios")
-                        .HasForeignKey("formaEnvio")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("PrimerParcial.Models.Entidades.Suplidor", "Suplidor")
+                    b.HasOne("PrimerParcial.Models.Entidades.formaEnvio", "FormaEnvio")
                         .WithMany()
-                        .HasForeignKey("idSuplidor")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("PrimerParcial.Models.Entidades.formaEnvioDetalle", b =>
-                {
-                    b.HasOne("PrimerParcial.Models.Entidades.formaEnvio")
-                        .WithMany("FormaEnvioDetalles")
                         .HasForeignKey("formaEnvioID")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("PrimerParcial.Models.Entidades.formaPago", "FormaPago")
                         .WithMany()
-                        .HasForeignKey("formaPagoID");
+                        .HasForeignKey("formaPagoID")
+                        .OnDelete(DeleteBehavior.Cascade);
 
+                    b.HasOne("PrimerParcial.Models.Entidades.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("idCliente")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.OrdenDetalle", b =>
+                {
                     b.HasOne("PrimerParcial.Models.Entidades.Articulo", "Articulo")
                         .WithMany()
                         .HasForeignKey("idArticulo")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Orden", "Orden")
+                        .WithMany()
+                        .HasForeignKey("ordenID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

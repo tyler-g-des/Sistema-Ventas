@@ -4,25 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Forma de Envio</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.formaPagoID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.formaEnvioDia)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nota)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Suplidor)
+                @Html.DisplayNameFor(model => model.formaEnvioDescripcion)
             </th>
             <th></th>
         </tr>
@@ -31,21 +22,12 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.formaPagoID)
+                @Html.DisplayFor(modelItem => item.formaEnvioDescripcion)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.formaEnvioDia)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nota)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Suplidor.idSuplidor)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.formaEnvioID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.formaEnvioID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.formaEnvioID">Delete</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.formaEnvioID">Edit</a> |
+                <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.formaEnvioID">Details</a> |
+                <a class="btn btn-danger"  asp-action="Delete" asp-route-id="@item.formaEnvioID">Delete</a>
             </td>
         </tr>
 }

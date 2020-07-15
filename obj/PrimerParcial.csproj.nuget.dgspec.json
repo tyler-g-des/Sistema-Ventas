@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler.diaz\\Documents\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {}
+    "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler.diaz\\Documents\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {
+    "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler.diaz\\Documents\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+        "projectUniqueName": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
         "projectName": "PrimerParcial",
-        "projectPath": "C:\\Users\\tyler.diaz\\Documents\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+        "projectPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
         "packagesPath": "C:\\Users\\tyler.diaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler.diaz\\Documents\\PrimerParcial-desarrollo\\obj\\",
+        "outputPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "net461": {
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore": {
               "target": "Package",
               "version": "[2.1.7, )"
@@ -86,6 +90,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.10, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"

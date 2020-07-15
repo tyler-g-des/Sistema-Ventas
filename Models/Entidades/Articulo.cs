@@ -16,14 +16,11 @@ namespace PrimerParcial.Models.Entidades
 
         public String Nombre { get; set; }
 
+        [DisplayName("Costo")]
+        [Required(ErrorMessage = "Completar el campo {0}")]
         public int Precio { get; set; }
 
         public int Cantidad { get; set; }
-
-
-        [DisplayName("Costo")]
-        [Required(ErrorMessage = "Completar el campo {0}")]
-        public decimal ArticleCost { get; set; }
 
 
         //-------------Marca------------
@@ -34,7 +31,7 @@ namespace PrimerParcial.Models.Entidades
 
         //-------------------------Clasificacion Articulo -----------
         [Display(Name = "ClasificacionArticulos")]
-        [ForeignKey("ClasificacionArticulos")]
+        [ForeignKey("idClasificacionArticulo")]
         public int idClasificacionArticulos { get; set; }
         public ClasificacionArticulos ClasificacionArticulos { get; set; }
 

@@ -13,26 +13,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="idSuplidor" class="control-label"></label>
-                <select asp-for="idSuplidor" class ="form-control" asp-items="ViewBag.idSuplidor"></select>
+                <label asp-for="formaEnvioDescripcion" class="control-label"></label>
+                <input asp-for="formaEnvioDescripcion" class="form-control" />
+                <span asp-validation-for="formaEnvioDescripcion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="formaPagoID" class="control-label"></label>
-                <input asp-for="formaPagoID" class="form-control" />
-                <span asp-validation-for="formaPagoID" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="formaEnvioDia" class="control-label"></label>
-                <input asp-for="formaEnvioDia" class="form-control" />
-                <span asp-validation-for="formaEnvioDia" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Nota" class="control-label"></label>
-                <textarea asp-for="Nota" class="form-control"></textarea>
-                <span asp-validation-for="Nota" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
         </form>
     </div>
@@ -42,6 +28,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
