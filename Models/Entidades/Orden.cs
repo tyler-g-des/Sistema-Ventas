@@ -12,10 +12,10 @@ namespace PrimerParcial.Models.Entidades
         [Key]
         public int ordenID { get; set; }
 
-        [Display(Name = "Cliente")]
-        [ForeignKey("idCliente")]
-        public int idCliente { get; set; }
-        public Cliente Cliente { get; set; }
+        [Display(Name = "Suplidor")]
+        [ForeignKey("idSuplidor")]
+        public int idSuplidor { get; set; }
+        public Suplidor Suplidor { get; set; }
 
         [Display(Name = "Forma de pago")]
         [ForeignKey("formaPagoID")]

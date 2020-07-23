@@ -25,7 +25,7 @@ namespace PrimerParcial.Controllers
         // GET: Ordens
         public async Task<IActionResult> Index()
         {
-            var dataContext = _context.Ordens.Include(o => o.Cliente).Include(o => o.FormaEnvio).Include(o => o.FormaPago);
+            var dataContext = _context.Ordens.Include(o => o.Suplidor).Include(o => o.FormaEnvio).Include(o => o.FormaPago);
             return View(await dataContext.ToListAsync());
         }
 
@@ -38,7 +38,7 @@ namespace PrimerParcial.Controllers
             }
 
             var orden = await _context.Ordens
-                .Include(o => o.Cliente)
+                .Include(o => o.Suplidor)
                 .Include(o => o.FormaEnvio)
                 .Include(o => o.FormaPago)
                 .FirstOrDefaultAsync(m => m.ordenID == id);
@@ -52,7 +52,7 @@ namespace PrimerParcial.Controllers
             var OrdenDetalle = new OrdenDetalle();
 
             OrdenView.Orden = await _context.Ordens
-                .Include(o => o.Cliente)
+                .Include(o => o.Suplidor)
                 .Include(o => o.FormaEnvio)
                 .Include(o => o.FormaPago)
                 .FirstOrDefaultAsync(m => m.ordenID == id);
@@ -71,7 +71,7 @@ namespace PrimerParcial.Controllers
         // GET: Ordens/Create
         public IActionResult Create()
         {
-            ViewData["idCliente"] = new SelectList(_context.Clientes, "idCliente", "nombre");
+            ViewData["idSuplidor"] = new SelectList(_context.Suplidor, "idSuplidor", "nombre");
             ViewData["formaEnvioID"] = new SelectList(_context.formaEnvios, "formaEnvioID", "formaEnvioDescripcion");
             ViewData["formaPagoID"] = new SelectList(_context.formaPagos, "formaPagoID", "formaPagoDescripcion");
 
@@ -83,7 +83,7 @@ namespace PrimerParcial.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ordenID,idCliente,formaPagoID,formaEnvioID,fechaOrden,observacion,subtotal,impuesto,total")] Orden orden)
+        public async Task<IActionResult> Create([Bind("ordenID,idSuplidor,formaPagoID,formaEnvioID,fechaOrden,observacion,subtotal,impuesto,total")] Orden orden)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace PrimerParcial.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCliente"] = new SelectList(_context.Clientes, "idCliente", "idCliente", orden.idCliente);
+            ViewData["idSuplidor"] = new SelectList(_context.Clientes, "idSuplidor", "idSuplidor", orden.idSuplidor);
             ViewData["formaEnvioID"] = new SelectList(_context.formaEnvios, "formaEnvioID", "formaEnvioDescripcion", orden.formaEnvioID);
             ViewData["formaPagoID"] = new SelectList(_context.formaPagos, "formaPagoID", "formaPagoDescripcion", orden.formaPagoID);
             return View(orden);
@@ -110,7 +110,7 @@ namespace PrimerParcial.Controllers
             {
                 return NotFound();
             }
-            ViewData["idCliente"] = new SelectList(_context.Clientes, "idCliente", "nombre", orden.idCliente);
+            ViewData["idCliente"] = new SelectList(_context.Clientes, "idSuplidor", "nombre", orden.idSuplidor);
             ViewData["formaEnvioID"] = new SelectList(_context.formaEnvios, "formaEnvioID", "formaEnvioDescripcion", orden.formaEnvioID);
             ViewData["formaPagoID"] = new SelectList(_context.formaPagos, "formaPagoID", "formaPagoDescripcion", orden.formaPagoID);
             return View(orden);
@@ -148,7 +148,7 @@ namespace PrimerParcial.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["idCliente"] = new SelectList(_context.Clientes, "idCliente", "nombre", orden.idCliente);
+            ViewData["idCliente"] = new SelectList(_context.Clientes, "idSuplidor", "nombre", orden.idSuplidor);
             ViewData["formaEnvioID"] = new SelectList(_context.formaEnvios, "formaEnvioID", "formaEnvioDescripcion", orden.formaEnvioID);
             ViewData["formaPagoID"] = new SelectList(_context.formaPagos, "formaPagoID", "formaPagoDescripcion", orden.formaPagoID);
             return View(orden);
@@ -163,7 +163,7 @@ namespace PrimerParcial.Controllers
             }
 
             var orden = await _context.Ordens
-                .Include(o => o.Cliente)
+                .Include(o => o.Suplidor)
                 .Include(o => o.FormaEnvio)
                 .Include(o => o.FormaPago)
                  .FirstOrDefaultAsync(m => m.ordenID == id);
@@ -198,8 +198,7 @@ namespace PrimerParcial.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(ordenDetalle);
-
+         
                 int id = ordenDetalle.ordenID;
                 int idArticulo = ordenDetalle.idArticulo;
 
@@ -211,12 +210,55 @@ namespace PrimerParcial.Controllers
                 ordenDetalle.precio = precio;
                 ordenDetalle.precioTotal = cantidad * precio;
 
+
+               if (_context.ordenDetalles.Any(o => o.ordenDetallID == id))
+               {
+                    Models.Entidades.OrdenDetalle ordenDetalleUpdate = _context.ordenDetalles.Find(id);
+                    // var oo = _context.ordenDetalles.Find(id).idArticulo;
+                    // var oo = _context.ordenDetalles.Any(o => o.idArticulo == idArticulo);
+                    if (ordenDetalleUpdate.idArticulo != idArticulo)
+                    {
+
+                        Models.Entidades.OrdenDetalle ordene = _context.ordenDetalles
+                                                            .Where(s => s.idArticulo == idArticulo)
+                                                            .FirstOrDefault();
+
+                        Models.Entidades.OrdenDetalle ordene1 = _context.ordenDetalles
+                                                           .Where(s => s.ordenID == id)
+                                                           .FirstOrDefault();
+
+                        if (ordene != null && ordene1 != null)
+                        {
+                            ordene.cantidad += cantidad;
+                            _context.Update(ordene);
+                        }
+                        else 
+                        {
+                            _context.Add(ordenDetalle);
+                        }
+
+                    }
+
+                    else
+                    {
+                         
+                        if (_context.ordenDetalles.Any(o => o.ordenID == 2)) {
+                            ordenDetalleUpdate.cantidad += cantidad;
+                            _context.Update(ordenDetalleUpdate);
+                        }
+                    }
+
+               }
+               else
+               {
+                   _context.Add(ordenDetalle);
+               }
+
                 await _context.SaveChangesAsync();
 
                 Models.Entidades.Orden Orden = _context.Ordens.Find(id);
                 Orden.subtotal += cantidad * precio;
                 Orden.total += cantidad * precio;
-                Orden.impuesto = 0;
 
                 _context.Update(Orden);
                 _context.SaveChanges();
@@ -231,13 +273,41 @@ namespace PrimerParcial.Controllers
         }
 
    
-        public async Task<IActionResult> Imprimir(int? id)
+        public async Task<IActionResult> Factura(int? id)
         {
 
             OrdenView dd = new OrdenView();
 
             dd.Orden = await _context.Ordens
-                .Include(o => o.Cliente)
+                .Include(o => o.Suplidor)
+                .Include(o => o.FormaEnvio)
+                .Include(o => o.FormaPago)
+                .FirstOrDefaultAsync(m => m.ordenID == id);
+
+            var data = _context.ordenDetalles
+                .Include(od => od.Orden)
+                 .Include(od => od.Articulo)
+                .Where(od => od.ordenID.Equals(id)).ToList();
+            dd.Articulos = data;
+
+            ////Tyler 
+            //return new ViewAsPdf("Details", dd)
+            //{
+            //    FileName = "reporte.pdf",
+            //    PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+            //    PageSize = Rotativa.AspNetCore.Options.Size.A4,    
+            //};
+
+            return View("Factura", dd);
+
+           
+        }
+        public async Task<IActionResult> ValidarImprimir(int? id)
+        {
+            OrdenView dd = new OrdenView();
+
+            dd.Orden = await _context.Ordens
+                .Include(o => o.Suplidor)
                 .Include(o => o.FormaEnvio)
                 .Include(o => o.FormaPago)
                 .FirstOrDefaultAsync(m => m.ordenID == id);
@@ -248,39 +318,35 @@ namespace PrimerParcial.Controllers
                 .Where(od => od.ordenID.Equals(id)).ToList();
             dd.Articulos = data;
 
-            //Tyler 
-            return new ViewAsPdf("Details", dd)
+            return View("ValidaFactura",dd);
+        }
+
+
+        public async Task<IActionResult> GuardarImpresion(int? id)
+        {
+
+            OrdenView dd = new OrdenView();
+
+            dd.Orden = await _context.Ordens
+                .Include(o => o.Suplidor)
+                .Include(o => o.FormaEnvio)
+                .Include(o => o.FormaPago)
+                .FirstOrDefaultAsync(m => m.ordenID == id);
+
+            var data = _context.ordenDetalles
+                .Include(od => od.Orden)
+                 .Include(od => od.Articulo)
+                .Where(od => od.ordenID.Equals(id)).ToList();
+            dd.Articulos = data;
+
+            ////Tyler 
+            return new ViewAsPdf("Factura", dd)
             {
                 FileName = "reporte.pdf",
                 PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-                PageSize = Rotativa.AspNetCore.Options.Size.A4,
-         
+                PageSize = Rotativa.AspNetCore.Options.Size.A3,
+                
             };
-
-           
-        }
-
-
-        public async Task<IActionResult> Guardar()
-        {
-
-            return View("Index");
-
-        }
-
-
-        public async Task<IActionResult> EliminarArticulo(int? id)
-        {
-
-            int idd = int.Parse(id.ToString());
-            OrdenDetallesController detalle = new OrdenDetallesController(_context);
-
-            detalle.Delete(idd);
-            detalle.DeleteConfirmed(idd);
-
-            return RedirectToAction(nameof(Index));
-
-
         }
     }
 }

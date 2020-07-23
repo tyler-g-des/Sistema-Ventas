@@ -34,10 +34,10 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Orden.Cliente)
+            @Html.DisplayNameFor(model => model.Orden.Suplidor)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Orden.Cliente.nombre)
+            @Html.DisplayFor(model => model.Orden.Suplidor.nombre)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Orden.FormaPago)
@@ -71,7 +71,7 @@
     <!-- modal -->
     <button type="button" class="btn btn-success btn-large" data-toggle="modal" data-target="#adicionarArticulo">Adicionar Artículo</button>
 
-    <input type="submit" value="Guardar Orden" asp-action="Guardar" class="btn btn-primary" />
+    
 </div>
 
 <div class="x_content">
@@ -93,38 +93,54 @@
 
                         @foreach (var item in Model.Articulos)
                         {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Articulo.idArticulo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Articulo.Nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.precio)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.cantidad)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Orden.subtotal)
+                                </td>
+
+                            </tr>
+                            <!-- <td>
+                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ordenDetallID">Edit</a> |
+                 <a class="btn btn-danger" asp-action="EliminarArticulo" asp-route-id="@item.ordenDetallID">Delete</a>
+             </td>  -->
+                        }
+                    </tbody>
+
+                    <tbody class="data">       
                         <tr>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Articulo.idArticulo)
+                                SubTotal:  @Html.DisplayFor(modelItem => Model.Orden.subtotal)
                             </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Articulo.Nombre)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.precio)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.cantidad)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Orden.total)
-                            </td>
-                           <!-- <td>
-                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ordenDetallID">Edit</a> |
-                                <a class="btn btn-danger" asp-action="EliminarArticulo" asp-route-id="@item.ordenDetallID">Delete</a>
-                            </td>  -->
-
                         </tr>
 
-                        
-                        }
+                        <tr>
+                            <td>
+                                Impuesto:  @Html.DisplayFor(modelItem => Model.Orden.impuesto)
+                            </td>
+                        </tr>
 
-
-
+                        <tr>
+                            <td>
+                                Total:   @Html.DisplayFor(modelItem => Model.Orden.total)
+                            </td>
+                        </tr>
                     </tbody>
- 
 
-                    
+
+
                 </table>
             </div>
         </div>
@@ -132,6 +148,6 @@
 
  </div>
 <div>
-    <a class="btn btn-danger" asp-action="Imprimir" asp-route-id="@id">Imprimir Orden </a>
+    <a class="btn btn-danger" asp-action="ValidarImprimir" asp-route-id="@id">Imprimir Orden</a>
     <a class="btn btn-primary" asp-action="Index">Back to List</a>
 </div>

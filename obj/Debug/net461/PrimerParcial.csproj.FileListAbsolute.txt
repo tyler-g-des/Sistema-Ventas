@@ -1361,3 +1361,5 @@ C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\System.Web
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\System.Web.WebPages.dll
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\Microsoft.Web.Infrastructure.dll
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\Rotativa.AspNetCore.dll
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Ordens\Factura.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Ordens\ValidaFactura.cshtml.g.cs
