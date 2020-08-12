@@ -135,6 +135,64 @@ namespace PrimerParcial.Migrations
                     b.ToTable("Clientes");
                 });
 
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Compra", b =>
+                {
+                    b.Property<int>("compraID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("fechaOrden");
+
+                    b.Property<int>("formaEnvioID");
+
+                    b.Property<int>("formaPagoID");
+
+                    b.Property<int>("idCliente");
+
+                    b.Property<decimal>("impuesto");
+
+                    b.Property<string>("observacion");
+
+                    b.Property<decimal>("subtotal");
+
+                    b.Property<decimal>("total");
+
+                    b.HasKey("compraID");
+
+                    b.HasIndex("formaEnvioID");
+
+                    b.HasIndex("formaPagoID");
+
+                    b.HasIndex("idCliente");
+
+                    b.ToTable("Compra");
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.CompraDetalle", b =>
+                {
+                    b.Property<int>("compraDetallID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("cantidad");
+
+                    b.Property<int>("compraID");
+
+                    b.Property<int>("idArticulo");
+
+                    b.Property<decimal>("precio");
+
+                    b.Property<decimal>("precioTotal");
+
+                    b.HasKey("compraDetallID");
+
+                    b.HasIndex("compraID");
+
+                    b.HasIndex("idArticulo");
+
+                    b.ToTable("compraDetalles");
+                });
+
             modelBuilder.Entity("PrimerParcial.Models.Entidades.Empleado", b =>
                 {
                     b.Property<int>("idEmpleado")
@@ -443,6 +501,37 @@ namespace PrimerParcial.Migrations
                     b.HasOne("PrimerParcial.Models.Clasificaciones.ClasificacionCliente", "clasificacionCliente")
                         .WithMany()
                         .HasForeignKey("idClasificacionCliente")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.Compra", b =>
+                {
+                    b.HasOne("PrimerParcial.Models.Entidades.formaEnvio", "FormaEnvio")
+                        .WithMany()
+                        .HasForeignKey("formaEnvioID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PrimerParcial.Models.Entidades.formaPago", "FormaPago")
+                        .WithMany()
+                        .HasForeignKey("formaPagoID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("idCliente")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("PrimerParcial.Models.Entidades.CompraDetalle", b =>
+                {
+                    b.HasOne("PrimerParcial.Models.Entidades.Compra", "Compra")
+                        .WithMany()
+                        .HasForeignKey("compraID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("PrimerParcial.Models.Entidades.Articulo", "Articulo")
+                        .WithMany()
+                        .HasForeignKey("idArticulo")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

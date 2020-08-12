@@ -64,7 +64,6 @@ namespace PrimerParcial.Controllers
             ViewData["orden"] = new SelectList(_context.Ordens, "ordenID", "ordenID", OrdenDetalle.ordenID);
             ViewData["Articuloo"] = new SelectList(_context.Articulo, "idArticulo", "Nombre");
 
-
             return View(OrdenView);
         }
 
@@ -196,9 +195,10 @@ namespace PrimerParcial.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AdicionarArticulo([Bind("ordenDetallID,idArticulo,cantidad,precio,precioTotal,ordenID")] OrdenDetalle ordenDetalle)
         {
+
             if (ModelState.IsValid)
             {
-         
+
                 int id = ordenDetalle.ordenID;
                 int idArticulo = ordenDetalle.idArticulo;
 
@@ -210,15 +210,17 @@ namespace PrimerParcial.Controllers
                 ordenDetalle.precio = precio;
                 ordenDetalle.precioTotal = cantidad * precio;
 
+                articulo.Cantidad += decimal.ToInt32(cantidad);
+                _context.Update(articulo);
 
-               if (_context.ordenDetalles.Any(o => o.ordenDetallID == id))
-               {
-                    Models.Entidades.OrdenDetalle ordenDetalleUpdate = _context.ordenDetalles.Find(id);
-                    // var oo = _context.ordenDetalles.Find(id).idArticulo;
-                    // var oo = _context.ordenDetalles.Any(o => o.idArticulo == idArticulo);
-                    if (ordenDetalleUpdate.idArticulo != idArticulo)
+                if (_context.ordenDetalles.Any(o => o.ordenID == id))
+                {
+                    Models.Entidades.OrdenDetalle ordenDetalleUpdate = _context.ordenDetalles.Where(t => t.idArticulo 
+                       == idArticulo).FirstOrDefault();
+                    Models.Entidades.OrdenDetalle ordenDetalleUpdate1 = _context.ordenDetalles.Find(id);
+
+                    if (ordenDetalleUpdate == null && ordenDetalleUpdate1.ordenID == id)
                     {
-
                         Models.Entidades.OrdenDetalle ordene = _context.ordenDetalles
                                                             .Where(s => s.idArticulo == idArticulo)
                                                             .FirstOrDefault();
@@ -232,7 +234,7 @@ namespace PrimerParcial.Controllers
                             ordene.cantidad += cantidad;
                             _context.Update(ordene);
                         }
-                        else 
+                        else
                         {
                             _context.Add(ordenDetalle);
                         }
@@ -241,18 +243,22 @@ namespace PrimerParcial.Controllers
 
                     else
                     {
-                         
-                        if (_context.ordenDetalles.Any(o => o.ordenID == 2)) {
+                        if (ordenDetalleUpdate.ordenID == id)
+                        {
                             ordenDetalleUpdate.cantidad += cantidad;
                             _context.Update(ordenDetalleUpdate);
+                        }else
+                        {
+                            _context.Add(ordenDetalle);
+
                         }
                     }
 
-               }
-               else
-               {
-                   _context.Add(ordenDetalle);
-               }
+                }
+                else
+                {
+                    _context.Add(ordenDetalle);
+                }
 
                 await _context.SaveChangesAsync();
 
@@ -271,82 +277,82 @@ namespace PrimerParcial.Controllers
 
             return View(ordenDetalle);
         }
+    
 
-   
-        public async Task<IActionResult> Factura(int? id)
-        {
+    public async Task<IActionResult> Factura(int? id)
+    {
 
-            OrdenView dd = new OrdenView();
+        OrdenView dd = new OrdenView();
 
-            dd.Orden = await _context.Ordens
-                .Include(o => o.Suplidor)
-                .Include(o => o.FormaEnvio)
-                .Include(o => o.FormaPago)
-                .FirstOrDefaultAsync(m => m.ordenID == id);
+        dd.Orden = await _context.Ordens
+            .Include(o => o.Suplidor)
+            .Include(o => o.FormaEnvio)
+            .Include(o => o.FormaPago)
+            .FirstOrDefaultAsync(m => m.ordenID == id);
 
-            var data = _context.ordenDetalles
-                .Include(od => od.Orden)
-                 .Include(od => od.Articulo)
-                .Where(od => od.ordenID.Equals(id)).ToList();
-            dd.Articulos = data;
+        var data = _context.ordenDetalles
+            .Include(od => od.Orden)
+             .Include(od => od.Articulo)
+            .Where(od => od.ordenID.Equals(id)).ToList();
+        dd.Articulos = data;
 
-            ////Tyler 
-            //return new ViewAsPdf("Details", dd)
-            //{
-            //    FileName = "reporte.pdf",
-            //    PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-            //    PageSize = Rotativa.AspNetCore.Options.Size.A4,    
-            //};
+        ////Tyler 
+        //return new ViewAsPdf("Details", dd)
+        //{
+        //    FileName = "reporte.pdf",
+        //    PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+        //    PageSize = Rotativa.AspNetCore.Options.Size.A4,    
+        //};
 
-            return View("Factura", dd);
-
-           
-        }
-        public async Task<IActionResult> ValidarImprimir(int? id)
-        {
-            OrdenView dd = new OrdenView();
-
-            dd.Orden = await _context.Ordens
-                .Include(o => o.Suplidor)
-                .Include(o => o.FormaEnvio)
-                .Include(o => o.FormaPago)
-                .FirstOrDefaultAsync(m => m.ordenID == id);
-
-            var data = _context.ordenDetalles
-                .Include(od => od.Orden)
-                .Include(od => od.Articulo)
-                .Where(od => od.ordenID.Equals(id)).ToList();
-            dd.Articulos = data;
-
-            return View("ValidaFactura",dd);
-        }
+        return View("Factura", dd);
 
 
-        public async Task<IActionResult> GuardarImpresion(int? id)
-        {
-
-            OrdenView dd = new OrdenView();
-
-            dd.Orden = await _context.Ordens
-                .Include(o => o.Suplidor)
-                .Include(o => o.FormaEnvio)
-                .Include(o => o.FormaPago)
-                .FirstOrDefaultAsync(m => m.ordenID == id);
-
-            var data = _context.ordenDetalles
-                .Include(od => od.Orden)
-                 .Include(od => od.Articulo)
-                .Where(od => od.ordenID.Equals(id)).ToList();
-            dd.Articulos = data;
-
-            ////Tyler 
-            return new ViewAsPdf("Factura", dd)
-            {
-                FileName = "reporte.pdf",
-                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-                PageSize = Rotativa.AspNetCore.Options.Size.A3,
-                
-            };
-        }
     }
+    public async Task<IActionResult> ValidarImprimir(int? id)
+    {
+        OrdenView dd = new OrdenView();
+
+        dd.Orden = await _context.Ordens
+            .Include(o => o.Suplidor)
+            .Include(o => o.FormaEnvio)
+            .Include(o => o.FormaPago)
+            .FirstOrDefaultAsync(m => m.ordenID == id);
+
+        var data = _context.ordenDetalles
+            .Include(od => od.Orden)
+            .Include(od => od.Articulo)
+            .Where(od => od.ordenID.Equals(id)).ToList();
+        dd.Articulos = data;
+
+        return View("ValidaFactura", dd);
+    }
+
+
+      public async Task<IActionResult> GuardarImpresion(int? id)
+      {
+
+        OrdenView dd = new OrdenView();
+
+        dd.Orden = await _context.Ordens
+            .Include(o => o.Suplidor)
+            .Include(o => o.FormaEnvio)
+            .Include(o => o.FormaPago)
+            .FirstOrDefaultAsync(m => m.ordenID == id);
+
+        var data = _context.ordenDetalles
+            .Include(od => od.Orden)
+             .Include(od => od.Articulo)
+            .Where(od => od.ordenID.Equals(id)).ToList();
+        dd.Articulos = data;
+
+        ////Tyler 
+        return new ViewAsPdf("Factura", dd)
+        {
+            FileName = "reporteFactura.pdf",
+            PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+            PageSize = Rotativa.AspNetCore.Options.Size.A3,
+
+        };
+      }
+   }
 }

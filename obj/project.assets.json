@@ -1739,6 +1739,9 @@
           "lib/netstandard2.0/Rotativa.AspNetCore.dll": {}
         }
       },
+      "SweetAlert/1.0.0": {
+        "type": "package"
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -4298,6 +4301,9 @@
         "runtime": {
           "lib/netstandard2.0/Rotativa.AspNetCore.dll": {}
         }
+      },
+      "SweetAlert/1.0.0": {
+        "type": "package"
       },
       "System.AppContext/4.3.0": {
         "type": "package",
@@ -6997,6 +7003,28 @@
         "lib/netstandard2.0/Rotativa.AspNetCore.dll",
         "rotativa.aspnetcore.1.1.1.nupkg.sha512",
         "rotativa.aspnetcore.nuspec"
+      ]
+    },
+    "SweetAlert/1.0.0": {
+      "sha512": "eaHJph59CQhNUf5h6k02LaWM31az2t8JBHcJuVXW2dZ+QU2TDkHCxOUSNdAVIgfj+ivQsBTp6laWt8H0nKAydQ==",
+      "type": "package",
+      "path": "sweetalert/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/bootstrap/mixins.less",
+        "content/Content/bootstrap/variables.less",
+        "content/Content/sweetalert/bootstrap-sweetalert.png",
+        "content/Content/sweetalert/docs.css",
+        "content/Content/sweetalert/sweet-alert-animations.less",
+        "content/Content/sweetalert/sweet-alert-combine.less",
+        "content/Content/sweetalert/sweet-alert.css",
+        "content/Content/sweetalert/sweet-alert.less",
+        "content/Content/sweetalert/thumbs-up.jpg",
+        "content/Controllers/SweetController.cs",
+        "content/Views/Sweet/Alert.cshtml",
+        "sweetalert.1.0.0.nupkg.sha512",
+        "sweetalert.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -9973,7 +10001,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.2",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.1.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
-      "Rotativa.AspNetCore >= 1.1.1"
+      "Rotativa.AspNetCore >= 1.1.1",
+      "SweetAlert >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10070,6 +10099,10 @@
           "Rotativa.AspNetCore": {
             "target": "Package",
             "version": "[1.1.1, )"
+          },
+          "SweetAlert": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"

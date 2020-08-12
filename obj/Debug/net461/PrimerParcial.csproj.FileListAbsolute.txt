@@ -1363,3 +1363,16 @@ C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\Microsoft.
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\bin\Debug\net461\Rotativa.AspNetCore.dll
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Ordens\Factura.cshtml.g.cs
 C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Ordens\ValidaFactura.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Create.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Delete.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Details.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Edit.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Index.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\AddCompra.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\CompraDetalles\Create.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\CompraDetalles\Delete.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\CompraDetalles\Details.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\CompraDetalles\Edit.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\CompraDetalles\Index.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\Factura.cshtml.g.cs
+C:\Users\tyler.diaz\Desktop\PrimerParcial-desarrollo\obj\Debug\net461\Razor\Views\Compras\ValidaFactura.cshtml.g.cs

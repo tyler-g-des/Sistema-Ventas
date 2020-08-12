@@ -1,0 +1,77 @@
+﻿@model IEnumerable<PrimerParcial.Models.Entidades.Compra>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormaPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormaEnvio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaOrden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.observacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subtotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.impuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.idCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaPago.formaPagoDescripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaEnvio.formaEnvioDescripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaOrden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.observacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.impuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.compraID">Edit</a> |
+                <a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.compraID">Details</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.compraID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

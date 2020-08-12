@@ -93,29 +93,40 @@
 
                         @foreach (var item in Model.Articulos)
                         {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Articulo.idArticulo)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Articulo.Nombre)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.precio)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.cantidad)
-                                </td>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Articulo.idArticulo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Articulo.Nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.precio)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.cantidad)
+                            </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Orden.subtotal)
-                                </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Orden.subtotal)
+                            </td>
 
-                            </tr>
-                            <!-- <td>
-                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ordenDetallID">Edit</a> |
-                 <a class="btn btn-danger" asp-action="EliminarArticulo" asp-route-id="@item.ordenDetallID">Delete</a>
-             </td>  -->
+                            <td>
+
+                                <form asp-action="borrarDetalleConfirmacion">
+                                    @using (Html.BeginForm())
+                                    {
+                                        <input type="hidden" name="idArticulo" value="@item.Articulo.idArticulo" asp-for="@item.Articulo.idArticulo" />
+                                        <input type="hidden" name="id Compra" value="@item.ordenID" asp-for="@item.Orden.ordenID" />
+                                        <input type="submit" value="Delete" class="btn btn-danger" />
+
+                                    }
+                                </form>
+
+                            </td>
+
+                        </tr>
+                           
                         }
                     </tbody>
 

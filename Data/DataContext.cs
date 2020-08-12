@@ -40,5 +40,8 @@ namespace PrimerParcial.Data
 
         public DbSet<OrdenDetalle> ordenDetalles { get; set; }
 
+        public DbSet<PrimerParcial.Models.Entidades.Compra> Compra { get; set; }
+
+        public DbSet<CompraDetalle> compraDetalles { get; set; }
     }
 }

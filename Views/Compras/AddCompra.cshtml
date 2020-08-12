@@ -1,0 +1,69 @@
+﻿@model PrimerParcial.ViewModels.CompraView
+@{
+    ViewBag.Title = "Agregar Compra";
+}
+
+@*@Styles.Render("~/AdminLTE/plugins/select2/css")*@
+
+@*<h2>Agregar Artíclulo</h2>*@
+
+<h3>@ViewBag.Error</h3>
+
+<form asp-action="AdicionarArticulo">
+
+
+    <div class="form-horizontal">
+
+        @* CODIGO PARA FORMATEAR LOS FORMULARIOS *@
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Completar los campos</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                @* FIN DE CODIGO PARA FORMATEAR LOS FORMULARIOS *@
+
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label class="control-label">Articulo</label>
+                                        <select asp-for="CompraDetalle.idArticulo" class="form-control" asp-items="ViewBag.Articuloo"></select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label>cantidad</label>
+                                        <input  asp-for="CompraDetalle.cantidad" class="form-control" />
+                                    </div>
+
+
+                                    <div class="form-group" style="display:none">
+                                        <input asp-for="CompraDetalle.compraID" class="form-control" value="@ViewData["id"].ToString()" />
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+               
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Agregar Artículo" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                        @* CODIGO PARA FORMATEAR LOS FORMULARIOS *@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* FIN DE CODIGO PARA FORMATEAR LOS FORMULARIOS *@
+
+    </div>
+</form>
+

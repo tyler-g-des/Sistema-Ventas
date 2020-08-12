@@ -32,10 +32,12 @@
                                         <label class="control-label">Articulo</label>
                                         <select asp-for="OrdenDetalle.idArticulo" class="form-control" asp-items="ViewBag.Articuloo"></select>
                                     </div>
-                                    <div class="form-group">
+
+                                     <div class="form-group">
                                         <label>cantidad</label>
                                         <input asp-for="OrdenDetalle.cantidad" class="form-control" />
                                     </div>
+
                                     <div class="form-group" style="display:none">
                                         <input asp-for="OrdenDetalle.ordenID" class="form-control"  value="@ViewData["id"].ToString()"/>
                                     </div>

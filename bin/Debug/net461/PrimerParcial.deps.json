@@ -37,6 +37,7 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
           "Rotativa.AspNetCore": "1.1.1",
+          "SweetAlert": "1.0.0",
           "Accessibility": "4.0.0.0",
           "System.Core": "4.0.0.0",
           "System.Data": "4.0.0.0",
@@ -1969,6 +1970,7 @@
           "lib/netstandard2.0/Rotativa.AspNetCore.dll": {}
         }
       },
+      "SweetAlert/1.0.0": {},
       "System.AppContext/4.3.0": {},
       "System.Buffers/4.5.0": {
         "compile": {
@@ -2202,6 +2204,7 @@
           "Microsoft.VisualStudio.Web.BrowserLink": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
           "Rotativa.AspNetCore": "1.1.1",
+          "SweetAlert": "1.0.0",
           "Accessibility": "4.0.0.0",
           "System.Core": "4.0.0.0",
           "System.Data": "4.0.0.0",
@@ -3498,6 +3501,7 @@
           "lib/netstandard2.0/Rotativa.AspNetCore.dll": {}
         }
       },
+      "SweetAlert/1.0.0": {},
       "System.AppContext/4.3.0": {},
       "System.Buffers/4.5.0": {
         "runtime": {
@@ -4572,6 +4576,13 @@
       "sha512": "sha512-LzlleiGJ+r39cDm4ln/gd1s7QEIeFtYOcxS5AIwGcE4kk1+axULj48xMV1MTEr7U+yH73VBl+aUbkJsKAVmzAA==",
       "path": "rotativa.aspnetcore/1.1.1",
       "hashPath": "rotativa.aspnetcore.1.1.1.nupkg.sha512"
+    },
+    "SweetAlert/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eaHJph59CQhNUf5h6k02LaWM31az2t8JBHcJuVXW2dZ+QU2TDkHCxOUSNdAVIgfj+ivQsBTp6laWt8H0nKAydQ==",
+      "path": "sweetalert/1.0.0",
+      "hashPath": "sweetalert.1.0.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

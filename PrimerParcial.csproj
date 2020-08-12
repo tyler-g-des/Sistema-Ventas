@@ -44,6 +44,12 @@
     <Compile Remove="Migrations\20200713150518_forma-envio.Designer.cs" />
     <Compile Remove="Migrations\20200713171154_orden-ordenDetalle.cs" />
     <Compile Remove="Migrations\20200713171154_orden-ordenDetalle.Designer.cs" />
+    <Compile Remove="Migrations\20200809030148_detalleCompra.cs" />
+    <Compile Remove="Migrations\20200809030148_detalleCompra.Designer.cs" />
+    <Compile Remove="Migrations\20200809030414_detalleCompra.cs" />
+    <Compile Remove="Migrations\20200809030414_detalleCompra.Designer.cs" />
+    <Compile Remove="Migrations\20200809030612_detalleCompra.cs" />
+    <Compile Remove="Migrations\20200809030612_detalleCompra.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -63,6 +69,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
     <PackageReference Include="Rotativa.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="SweetAlert" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
