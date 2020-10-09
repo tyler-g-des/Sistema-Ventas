@@ -1,9 +1,6 @@
 language: csharp
 solution: PrimerParcial.sln
-dist: trusty
-sudo: required
-mono: none
-dotnet: 3.0.0
+
 branches:
   only:
     - develop
@@ -13,3 +10,7 @@ notifications:
   email:
     recipients:
       - tylercherield@gmail.com
+dist: trusty
+sudo: required
+mono: none
+dotnet: 3.0.0
