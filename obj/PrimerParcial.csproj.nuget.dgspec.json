@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {}
+    "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj": {
+    "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+        "projectUniqueName": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
         "projectName": "PrimerParcial",
-        "projectPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\PrimerParcial.csproj",
+        "projectPath": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
         "packagesPath": "C:\\Users\\tyler.diaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tyler.diaz\\Desktop\\PrimerParcial-desarrollo\\obj\\",
+        "outputPath": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -100,7 +100,7 @@
               "version": "[1.0.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.1.20155.7\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
