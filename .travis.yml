@@ -9,5 +9,3 @@ notifications:
   email:
     recipients:
       - tylercherield@gmail.com
-script:
-    - dotnet run
