@@ -14,6 +14,5 @@ dist: trusty
 sudo: required
 mono: none
 script:
- - dotnet --version
  - dotnet restore
  - dotnet build
