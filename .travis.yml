@@ -14,5 +14,4 @@ dist: trusty
 sudo: required
 mono: none
 script:
- - dotnet restore
- - dotnet build
+    - dotnet build PrimerParcial
