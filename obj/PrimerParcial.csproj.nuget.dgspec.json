@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {}
+    "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {}
   },
   "projects": {
-    "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {
+    "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
+        "projectUniqueName": "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
         "projectName": "PrimerParcial",
-        "projectPath": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
+        "projectPath": "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
         "packagesPath": "C:\\Users\\tyler.diaz\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\obj\\",
+        "outputPath": "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

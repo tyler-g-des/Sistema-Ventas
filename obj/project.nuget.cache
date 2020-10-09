@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QoFM8jYmwQe119nmp50J7tQLUx1UeDPBIZDFpVvwgbhh4petskBglVMMu4NSZBpJiZiGYkxysbpxEdy/NBKoXw==",
+  "dgSpecHash": "KBbpR9oBhhxYZV4S8tGfK0+mYF2ZLcvRhFqVSi7ZdlgPgmAi++qL0x7NVV8osH3ybGP6UtRDD+DfqfN8VB9Kkg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
+  "projectFilePath": "C:\\Users\\tyler.diaz\\Documents\\DevOps\\Practicas\\Codigo\\Sistema-Ventas\\PrimerParcial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tyler.diaz\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.7\\microsoft.aspnet.mvc.5.2.7.nupkg.sha512",
     "C:\\Users\\tyler.diaz\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",

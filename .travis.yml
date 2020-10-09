@@ -1,0 +1,13 @@
+language: csharp
+solution: PrimerParcial.sln
+branches:
+  only:
+    - develop
+    - "/^release-[0-999].[0-999]$/"
+    - master
+notifications:
+  email:
+    recipients:
+      - tylercherield@gmail.com
+script:
+    - dotnet run
