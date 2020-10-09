@@ -10,11 +10,9 @@ notifications:
   email:
     recipients:
       - tylercherield@gmail.com
-dotnet: 3.1.201
+dotnet: 3.1.3
 mono: none
 script:
     - dotnet build PrimerParcial.csproj
-    - dotnet build PrimerParcial.exe
-    - dotnet build PrimerParcial.Views.dll
     - dotnet restore PrimerParcial.csproj
    
